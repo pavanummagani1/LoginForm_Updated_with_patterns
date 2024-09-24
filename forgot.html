@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Details</title>
+</head>
+
+<body>
+    <form action="./forgotresponse.html">
+        <fieldset>
+            <legend>Enter Details</legend>
+            <label for="usermae">User name</label>
+            <br>
+            <input type="text" name="usermae" id="username" maxlength="12" pattern="[a-zA-Z\d]{8,12}"
+                title="please follow the pattern of minimum characters of 8 and max char of 12 along with numbers" required>
+            <br>
+            <label for="otp">OTP</label><br>
+            <input type="text" name="number" id="otp" maxlength="6" pattern="[0-9]{6}" title="Enter Correct OTP"
+                required>
+            <br>
+            <input type="submit" value="Submit Now">
+        </fieldset>
+    </form>
+</body>
+
+</html>
