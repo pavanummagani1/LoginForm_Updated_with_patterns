@@ -12,18 +12,18 @@
         <fieldset>
             <legend>Register Now</legend>
             <label for="username">Username</label> <br>
-            <input type="text" id="username" maxlength="12" pattern="[a-zA-Z\d]{8,12}"
+            <input type="text" id="username"  pattern="[a-zA-Z\d]{8,12}"
                 title="please follow the pattern of minimum characters of 8 and max char of 12 and No numbers" required>
             <br>
             <label for="password">Password</label>
             <br>
-            <input type="password" id="password" pattern="[a-zA-Z\d@!$]{8,12}"
+            <input type="password" id="password" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@#$!&]).{8,16}"
                 title="please Put a Password with the combination of a-z A-Z \d @!$ and password length should be between 8 to 12"
                 required>
             <br>
             <label for="email">Email</label>
             <br>
-            <input type="email" id="email" pattern="[a-zA-Z\d@.]{5,}" title="please fill the Email Correctly" required>
+            <input type="email" id="email" pattern="[a-z0-9.]+@(gmail|yahoo|outlook|org)\.[a-z]{2,}" title="please fill the Email Correctly" required>
             <br>
             <label for="gender">Gender</label><br>
 

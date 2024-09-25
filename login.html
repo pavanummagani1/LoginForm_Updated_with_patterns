@@ -18,8 +18,8 @@
             <br>
 
             <label for="password">Password</label><br>
-            <input type="password" id="password" maxlength="12" pattern="[a-zA-Z\d@!$]{8,12}"
-                title="please Put a Password with the combination of a-z A-Z \d @!$ and password length should be between 8 to 12"
+            <input type="password" id="password" maxlength="12" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@#$!&]).{8,16}"
+                title="Please Enter the correct Password"
                 required>
             <br>
             <input type="submit" value="Login Now">
